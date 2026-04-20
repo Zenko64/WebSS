@@ -32,7 +32,6 @@ export default defineConfig(({ mode }) => {
       plugins: [
         honox({
           entry: "app/index.ts",
-          islandComponents: { islandDir: "/app/client" },
         }),
         tailwindcss(),
         build({ entry: "app/index.ts" }),

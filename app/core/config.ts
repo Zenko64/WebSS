@@ -1,3 +1,11 @@
+/**
+ * @file config.ts
+ * @name Config
+ * @description This file parses and validates the environment variables provided using Zod.
+ * It ensures that all required configuration is present before starting the application.
+ * @module core/config
+ * @author Zenko
+ */
 import z from "zod";
 
 const configSchema = z.object({
@@ -22,4 +30,5 @@ if (!env.success) {
     env.error,
   );
 }
+
 export default env.data;

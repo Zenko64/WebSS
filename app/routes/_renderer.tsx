@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/client/providers/ThemeProvider";
+import { ThemeProvider } from "@/islands/providers/ThemeProvider";
 import { reactRenderer } from "@hono/react-renderer";
 import { Script } from "honox/server";
 import React from "react";
@@ -14,7 +14,7 @@ export default reactRenderer(({ children, title }) => {
         <title>{title ?? "WebSS"}</title>
       </head>
       <React.StrictMode>
-        <ThemeProvider defaultTheme="dark">
+        <ThemeProvider defaultTheme="system">
           <body>{children}</body>
         </ThemeProvider>
       </React.StrictMode>
