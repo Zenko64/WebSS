@@ -7,3 +7,5 @@ declare module "bun" {
         SECRET: string;
     }
 }
+
+declare module "*.css";

@@ -6,14 +6,14 @@
     "module": "Preserve",
     "moduleDetection": "force",
     "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx",
+    "jsxImportSource": "react",
     "allowJs": true,
 
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
     "verbatimModuleSyntax": true,
-    
     "noEmit": true,
 
     // Best practices
@@ -26,6 +26,10 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
-  }
+    "noPropertyAccessFromIndexSignature": false,
+    "paths": {
+      "@/*": ["./app/*"]
+    }
+  },
+  "include": ["app"]
 }
