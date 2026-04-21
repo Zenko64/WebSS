@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { createRoute } from "honox/factory";
 
 export default createRoute((c) => {

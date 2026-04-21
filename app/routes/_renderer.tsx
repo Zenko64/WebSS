@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/client/providers/ThemeProvider";
+import { ThemeProvider } from "../client/providers/ThemeProvider";
 import { reactRenderer } from "@hono/react-renderer";
 import { Script } from "honox/server";
 import React from "react";
