@@ -30,6 +30,7 @@
     "hono": "^4.12.14",
     "honox": "^0.1.55",
     "postgres": "^3.4.9",
+    "lucide-react": "^1.8.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "shadcn": "^4.3.1",
